@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta property="og:title"              content="Dr. Rad" />
+    <meta property="og:description"        content="A portifolio i made to test somethings" />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Meu portifólio</title>
+</head>
+<body>
+   <div id="header"> 
+       <img src="assets/avatar.png" id="avatar">
+       <div id="header_list">
+           <p onclick="ab()">Sobre Mim</p>
+           <p onclick="ha()">Habilidades</p>
+           <p onclick="cl()">Clientes</p>
+          <div id="head_image">
+           <img src="assets/ds.png" title="Discord" onclick="ds()">
+           <img src="assets/ig.png" title="Instagram" onclick="ig()">
+           <img src="assets/wpp.png"title="WhatsApp" onclick="wpp()">
+        </div>
+       </div> 
+       <div id="dash">
+       <p id="my_name">Me chamo Dr. Rad</p>
+       <p id="what_do">Designer de curas</p>
+    </div>
+   </div>
+
+   <div id="mid">
+    <p id="abm">Sobre mim</p>
+    <p id="text_abt">Eu me chamo Dr. Rad, tenho 48 anos e desde os 5 anos de idade já sou desginer de cura por vontade propria, <br> amo o meu trabalho e acho que devemos torna-lo cada vez melhor e acessivel para os humanos da humanidade.<br> Sou formado pela universidade da América da Europa e gosto de jogar RPG e assistir videos do Inutilismo, <br>também estou economizando dinheiro pois preciso de 12235 Kwanzas para adquirir uma Galinha D'angola.</p>
+   </div>
+  
+   <div id="hab">
+<p id="hab_text">Habilidades</p>
+<p id="my_habs">Eu não tenho nenhuma Habilidade, na verdade, nem poderia ser designer de curas pela lei</p>
+   </div>
+
+   <div id="cust">
+    <p id="cust_text">Clientes</p>
+
+    <div id="customers">
+     <img src="assets/duck.png" title="PATO PATO PATO PATO PATO PATO QUACK!">
+     <img src="assets/calling_me.png" title="Já volto, minha mãe tá me chamando">
+     <img src="assets/missing.png" title="Procura-se '-'">
+     <img src="assets/lizard.png" title="Lorem Ipsum Lagartos">
+    </div>
+       </div>
+       <div id="footer">
+        <p class="dev">Desenvolvido com ❤️ por <a style="color: white;" href="https://github.com/decaffeinatedcoffee">decaffeinatedcoffee</a></p>
+         <p id="copyright"></p>       
+    </div>
+</body>
+
+<script>
+    let d = new Date().getFullYear();
+    document.getElementById("copyright").innerText = "blablabla reservados blabla " + d;
+
+    function ab(){
+        document.getElementById("mid").scrollIntoView()
+    }
+
+    function ha(){
+        document.getElementById("hab").scrollIntoView()
+    }
+
+    function cl(){
+        document.getElementById("cust").scrollIntoView()
+    }
+    function ds(){
+     window.open("https://discord.com/users/694783408324476931");
+    }
+    function ig(){
+    window.open("https://instagram.com/");
+    }
+    function wpp(){
+    window.open("https://wa.me/123456789");
+    }
+</script>
+</html>
