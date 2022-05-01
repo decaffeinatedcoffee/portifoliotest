@@ -954,7 +954,7 @@ body{
        /*Dispositivos moveis, landscape*/
    @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
 
-    @media (max-width: 424px) and (max-height: 225px){
+    @media (max-width: 424px){
 
         #header{
             position: relative;
@@ -1116,7 +1116,7 @@ body{
     }
 
 
-    @media (min-width: 425px) and (min-height: 225px) and (max-width: 589px) and (max-height: 339px) {
+    @media (min-width: 425px) and (max-width: 589px){
         #header{
             position: relative;
             background:
@@ -1276,7 +1276,7 @@ body{
     }
 
 
-    @media (min-width: 590px) and (min-height: 340px) {
+    @media (min-width: 590px){
     #header{
         position: relative;
         background:
@@ -1303,6 +1303,7 @@ body{
         padding: 14px 16px;
         cursor: pointer;
         font-family: 'Mukta', sans-serif;
+        font-size: 14px;
     }
     #header_list{
         overflow: hidden;
@@ -1329,11 +1330,11 @@ body{
         display: block;
         margin: 0 auto;
         position: relative;
-  top: 20%;
+  top: 17%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 100px;
+  height: 90px;
     }
     #my_name{
         position: relative;
