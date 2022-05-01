@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <meta property="og:title"              content="Dr. Rad" />
-    <meta property="og:description"        content="A portifolio i made to test somethings" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/style.css">
     <meta name="theme-color" content="#292a2d" >
     <title>Meu portifólio</title>
@@ -15,6 +14,7 @@
 <body>
    <div id="header"> 
        <img src="assets/avatar.png" id="avatar">
+       <div id="header_animation">
        <div id="header_list">
            <p onclick="ab()">Sobre Mim</p>
            <p onclick="ha()">Habilidades</p>
@@ -25,6 +25,7 @@
            <img src="assets/wpp.png"title="WhatsApp" onclick="wpp()">
         </div>
        </div> 
+    </div>
        <div id="dash">
        <p id="my_name">Me chamo Dr. Rad</p>
        <p id="what_do">Designer de curas</p>
@@ -32,18 +33,21 @@
    </div>
 
    <div id="mid">
+       <div id="about_animation">
     <p id="abm">Sobre mim</p>
     <p id="text_abt">Eu me chamo Dr. Rad, tenho 48 anos e desde os 5 anos de idade já sou desginer de cura por vontade propria, <br> amo o meu trabalho e acho que devemos torna-lo cada vez melhor e acessivel para os humanos da humanidade.<br> Sou formado pela universidade da América da Europa e gosto de jogar RPG e assistir videos do Inutilismo, <br>também estou economizando dinheiro pois preciso de 12235 Kwanzas para adquirir uma Galinha D'angola.</p>
    </div>
-  
+  </div>
    <div id="hab">
+       <div id="hab_animation">
 <p id="hab_text">Habilidades</p>
 <p id="my_habs">Eu não tenho nenhuma Habilidade, na verdade, nem poderia ser designer de curas pela lei</p>
    </div>
-
+  </div>
    <div id="cust">
+       <div id="cust_animation">
     <p id="cust_text">Clientes</p>
-
+     
     <div id="customers">
      <img src="assets/duck.png" title="PATO PATO PATO PATO PATO PATO QUACK!">
      <img src="assets/calling_me.png" title="Já volto, minha mãe tá me chamando">
@@ -51,11 +55,13 @@
      <img src="assets/lizard.png" title="Lorem Ipsum Lagartos">
     </div>
        </div>
+    </div>
        <div id="footer">
         <p class="dev">Desenvolvido com ❤️ por <a style="color: white;" href="https://github.com/decaffeinatedcoffee">decaffeinatedcoffee</a></p>
-         <p id="copyright"></p>       
+         <a id="copyright" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>       
     </div>
 </body>
+
 
 <script>
     let d = new Date().getFullYear();
@@ -63,14 +69,20 @@
 
     function ab(){
         document.getElementById("mid").scrollIntoView()
+        document.getElementById("about_animation").style.display = "none";
+        $("#about_animation").fadeIn("slow");
     }
 
     function ha(){
         document.getElementById("hab").scrollIntoView()
+        document.getElementById("hab_animation").style.display = "none";
+        $("#hab_animation").fadeIn("slow");
     }
 
     function cl(){
         document.getElementById("cust").scrollIntoView()
+        document.getElementById("cust_animation").style.display = "none";
+        $("#cust_animation").fadeIn("slow");
     }
     function ds(){
      window.open("https://discord.com/users/694783408324476931");
@@ -81,5 +93,15 @@
     function wpp(){
     window.open("https://wa.me/123456789");
     }
+
+   $("#dash").fadeIn("slow");
+   $("#header_animation").fadeIn("slow");
+   $("#avatar").fadeIn("slow")
+   $("#about_animation").fadeIn("slow", ()=>{
+   $("#hab_animation").fadeIn(()=>{
+   $("#cust_animation").fadeIn()
+   })
+    })
+   
 </script>
 </html>
