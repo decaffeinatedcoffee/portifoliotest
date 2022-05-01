@@ -2,7 +2,6 @@ body{
     padding: none;
     margin: 0px;
    }
-  
    /*Outros dispositivos, portrait*/
    @media (max-width: 350px) {
     #header{
@@ -1434,4 +1433,26 @@ body{
  font-size: 15px;
     }
 }
+}
+#copyright{
+    cursor: pointer;
+    text-decoration: none;
+}
+#dash{
+    display: none;
+   }
+   #header_animation{
+       display: none;
+   }
+   #avatar{
+       display: none;
+   }
+   #about_animation{
+       display: none;
+   }
+   #hab_animation{
+       display: none;
+   }
+   #cust_animation{
+    display: none;
 }
