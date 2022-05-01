@@ -321,6 +321,14 @@ color: white;
 font-size: 15px;
    }
        }
+
+
+
+
+
+
+
+
        @media (min-width: 481px) and (max-width: 767px) {
            #header{
        position: relative;
@@ -334,9 +342,9 @@ font-size: 15px;
        position: absolute;
    }
    #avatar{
-       block-size: 20%;
+       block-size: 30%;
        border-radius: 50%;
-       margin-top: 0.5%;
+       margin-top: 1%;
        position: absolute;
        margin-left: 2%;
    }
@@ -374,15 +382,15 @@ width: 100%;
        display: block;
        margin: 0 auto;
        position: relative;
- top: 20%;
+ top: 15%;
  -webkit-transform: translateY(-50%);
  -ms-transform: translateY(-50%);
  transform: translateY(-50%);
- height: 100px;
+ height: 95px;
    }
    #my_name{
        position: relative;
-       top: 40%;
+       top: 30%;
 display: block;
 margin: 0 auto;
  color: white;
@@ -391,7 +399,7 @@ margin: 0 auto;
    }
    #what_do{
        position: relative;
-       top: 43%;
+       top: 38%;
 display: block;
 margin: 0 auto;
  color: white;
@@ -402,7 +410,7 @@ margin: 0 auto;
        position: absolute;
        background-color: rgba(0,0,0,0.9);
        width: 100%;
-       height: 50%;
+       height: 80%;
        top: 50%;
    }
    #abm{
@@ -421,8 +429,8 @@ margin: 0 auto;
        position: absolute;
        background-color:#581845;
        width: 100%;
-       height: 50%;
-      top: 100%;
+       height: 80%;
+      top: 130%;
    }
    #hab_text{
        text-align: center;
@@ -440,8 +448,8 @@ margin: 0 auto;
        position: absolute;
        background-color: rgba(0,0,0,0.9);
        width: 100%;
-       height: 50%;
-      top: 150%;
+       height: 70%;
+      top: 210%;
    }
    #cust_text{
        text-align: center;
@@ -461,8 +469,8 @@ margin: 0 auto;
        position: absolute;
        background-color:#121212;
        width: 100%;
-       height: 20%;
-      top: 200%;
+       height: 40%;
+      top: 280%;
    }
 
    .dev{
@@ -473,7 +481,7 @@ font-size: 15px;
    #copyright{
        position: absolute;
 bottom:0;
-left:41%;
+left:38%;
 color: white;
 font-size: 15px;
    }
